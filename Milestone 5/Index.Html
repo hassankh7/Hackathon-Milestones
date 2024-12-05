@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Shareable Resume Builder </title>
+    <link rel="stylesheet" href="Styling.Css">
+</head>
+<body>
+    <!-- First Section  -->
+    <h1>Shareable Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Your User" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter Your Education" rows="4" required></textarea>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter Your Work Experience" rows="4"></textarea>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter Your Skills" rows="4" required></textarea>
+        </fieldset>
+    
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+    
+    <br>
+    
+    <!-- Dynamic And Editable Resume -->
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume Will Be Generated -->
+
+    </div>
+
+    <br>
+
+    <!-- Section For The Sheriable  Link And Download option-->
+
+    <div id="sheriable-link-container" style="display: none;">
+        <h2>Sherable Link </h2>
+        <p>Here Is Your Unique Link to view or edit your resume </p>
+        <a href="#" id="sheriable-link" target="_blank"></a>
+        <br>
+        <button id="dowmload-pdf"><b>Dowmload As PDF</b></button>
+
+    </div>
+    <script src="Script.js"></script>
+    </body>
